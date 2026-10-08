@@ -47,7 +47,13 @@
             //Creation of my stack.
             Stack<Employee> myStack = new Stack<Employee>();
 
+            //Pushing the employee objects onto the stack.
             myStack.Push(anna);
+            myStack.Push(fredrik);
+
+            myStack.Push(essa);
+            myStack.Push(antonio);
+            myStack.Push(lillemor);
         }
     }
 }
