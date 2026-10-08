@@ -44,6 +44,10 @@
                 Gender = "Kvinna",
                 Salary = 35000
             };
+            //Creation of my stack.
+            Stack<Employee> myStack = new Stack<Employee>();
+
+            myStack.Push(anna);
         }
     }
 }
