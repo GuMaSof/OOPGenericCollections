@@ -56,6 +56,17 @@
             myStack.Push(essa);
             myStack.Push(antonio);
             myStack.Push(lillemor);
+
+            //Foreach loop that prints out values of properties of the objects in the Stack.
+            foreach (Employee i in myStack)
+            {
+                Console.WriteLine(i.ID);
+                Console.WriteLine(i.Name);
+
+                Console.WriteLine(i.Gender);
+                Console.WriteLine(i.Salary);
+                Console.WriteLine(""); //Creates some space in between the employee profiles.
+            }
         }
     }
 }
