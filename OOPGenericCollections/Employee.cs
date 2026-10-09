@@ -6,12 +6,16 @@ namespace OOPGenericCollections
 {
     internal class Employee
     {
+        
+        
         //Properties for the objects.
-        private string id;
-        private string name;
-        private string gender;
-        private int salary;
+        private string id = null;
+
+        private string name = null;
+        private string gender = null;
+        private int salary = 0;
         //Managing access to properties.
+
         public string ID
         {
             get { return id; }

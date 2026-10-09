@@ -45,7 +45,7 @@
                 Salary = 35000
             };
             //Creation of my stack.
-            Stack<Employee> myStack = new Stack<Employee>();
+            Stack myStack = new Stack();
 
             //Pushing the employee objects onto the stack.
             myStack.Push(anna);
