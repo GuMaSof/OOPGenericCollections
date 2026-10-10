@@ -58,24 +58,34 @@
             staffStack.Push(lillemor);
 
             //Foreach loop that prints out values of properties of the objects in the Stack.
-            foreach (Employee i in staffStack)
+            foreach (Employee j in staffStack)
             {
-                string employeeProfile = i.ID + " " + i.Name + " " + i.Gender + " " + i.Salary;
+                string jProfile = j.ID + " " + j.Name + " " + j.Gender + " " + j.Salary;
                 int numberOfObjects = staffStack.Count();
-                Console.Write(employeeProfile);
+                Console.Write(jProfile);
                 //Is supposed to count the objects in the stack but doesn't actually do it.
                 Console.WriteLine(numberOfObjects + " objects are left in the stack.");
                 Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
                 
             }
 
-            
-
+            //Popping the entire stack with the pop method.
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine(staffStack.Pop());
+                
+                staffStack.Pop();
+                
                 Console.WriteLine(staffStack.Count());
             }
+
+            staffStack.Push(anna);
+            staffStack.Push(fredrik);
+
+            staffStack.Push(essa);
+            staffStack.Push(antonio);
+            staffStack.Push(lillemor);
+
+            
         }
     }
 }
