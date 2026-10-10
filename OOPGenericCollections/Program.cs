@@ -68,6 +68,14 @@
                 Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
                 
             }
+
+            
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(staffStack.Pop());
+                Console.WriteLine(staffStack.Count());
+            }
         }
     }
 }
