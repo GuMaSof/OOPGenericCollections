@@ -85,7 +85,14 @@
             staffStack.Push(antonio);
             staffStack.Push(lillemor);
 
-            
+            //Loop that peeks at two objects.
+            for (int i = 0; i < 2; i++)
+            {
+
+                staffStack.Peek();
+
+                Console.WriteLine(staffStack.Count());
+            }
         }
     }
 }
