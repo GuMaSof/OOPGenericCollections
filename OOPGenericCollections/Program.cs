@@ -47,25 +47,26 @@
                 Salary = 35000
             };
             //Creation of my stack.
-            Stack myStack = new Stack();
+            Stack<Employee> staffStack = new Stack<Employee>();
 
             //Pushing the employee objects onto the stack.
-            myStack.Push(anna);
-            myStack.Push(fredrik);
+            staffStack.Push(anna);
+            staffStack.Push(fredrik);
 
-            myStack.Push(essa);
-            myStack.Push(antonio);
-            myStack.Push(lillemor);
+            staffStack.Push(essa);
+            staffStack.Push(antonio);
+            staffStack.Push(lillemor);
 
             //Foreach loop that prints out values of properties of the objects in the Stack.
-            foreach (Employee i in myStack)
+            foreach (Employee i in staffStack)
             {
-                Console.WriteLine(i.ID);
-                Console.WriteLine(i.Name);
-
-                Console.WriteLine(i.Gender);
-                Console.WriteLine(i.Salary);
-                Console.WriteLine(""); //Creates some space in between the employee profiles.
+                string employeeProfile = i.ID + " " + i.Name + " " + i.Gender + " " + i.Salary;
+                int numberOfObjects = staffStack.Count();
+                Console.Write(employeeProfile);
+                //Is supposed to count the objects in the stack but doesn't actually do it.
+                Console.WriteLine(numberOfObjects + " objects are left in the stack.");
+                Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
+                
             }
         }
     }
