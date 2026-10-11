@@ -52,9 +52,11 @@
             //Pushing each created object onto the stack for the first time.
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
+            Console.WriteLine("Printing employee profile information.");
             //Printing out the properties of each object.
             infoTools.ProfilePrinter();
 
+            Console.WriteLine("Popping each individual in the stack");
             //Popping each element of the stack.
             infoTools.Popper(lillemor);
             infoTools.Popper(antonio);
@@ -66,14 +68,31 @@
 
             //Pushing back the objects on the stack again, after having been removed by the Popper method above.
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
-            //Peeking at the properties of the objects. 
+            //Peeking at the properties of the objects.
             infoTools.Peeker(lillemor);
             infoTools.Peeker(antonio);
 
-            infoTools.Peeker(essa);
-            infoTools.Peeker(fredrik);
+            //Code block for checking if there is a third element of staffStack and additionally printing the properties of the object out if that is the case.
+            int loopCounter = 0;
+            foreach (Employee e in infoTools.staffStack)
+            {
+                
+                loopCounter = loopCounter + 1;
+                if (loopCounter == 3)
+                {
+                    if (e.ID != null && e.Name != null && e.Gender != null && e.Salary != 0)
+                    {
+                        string eProfile = e.ID + " " + e.Name + " " + e.Gender + " " + e.Salary;
 
-            infoTools.Peeker(anna);
+                        Console.WriteLine(eProfile);
+                        Console.WriteLine("______________________________________");
+                    }
+                    else
+                    {
+                        Console.WriteLine("There is no third element.");
+                    }
+                }
+            }
         }
         
     }
