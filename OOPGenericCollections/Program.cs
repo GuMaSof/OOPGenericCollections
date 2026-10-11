@@ -53,13 +53,13 @@
 
             infoTools.ProfilePrinter();
 
-            infoTools.Popper(anna);
-            infoTools.Popper(fredrik);
+            infoTools.Popper(lillemor);
+            infoTools.Popper(antonio);
 
             infoTools.Popper(essa);
-            infoTools.Popper(antonio);
-            infoTools.Popper(lillemor);
+            infoTools.Popper(fredrik);
 
+            infoTools.Popper(anna);
             //infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
             //infoTools.Peeker(anna);

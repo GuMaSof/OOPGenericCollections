@@ -31,7 +31,7 @@ namespace OOPGenericCollections
             {
                 string jProfile = j.ID + " " + j.Name + " " + j.Gender + " " + j.Salary;
                 
-                Console.Write(jProfile);
+                Console.WriteLine(jProfile);
                 //Is supposed to count the objects in the stack but doesn't actually do it.
                 Console.WriteLine(staffStack.Count + " objects are left in the stack.");
                 Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
