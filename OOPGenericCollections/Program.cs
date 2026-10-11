@@ -93,6 +93,20 @@
                     }
                 }
             }
+
+            //Creation of object so that we may access the List and associated methods.
+            ListManagement listManagement = new ListManagement();
+
+            //Adding the objects to the list.
+            listManagement.staffList.Add(anna);
+            listManagement.staffList.Add(fredrik);
+
+            listManagement.staffList.Add(essa);
+            listManagement.staffList.Add(antonio);
+
+            listManagement.staffList.Add(lillemor);
+            //Using the method for finding the second employee in the list.
+            listManagement.FindEmployee2(fredrik);
         }
         
     }
