@@ -62,6 +62,12 @@
             infoTools.Popper(anna);
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
+            infoTools.Peeker(lillemor);
+            infoTools.Peeker(antonio);
+
+            infoTools.Peeker(essa);
+            infoTools.Peeker(fredrik);
+
             infoTools.Peeker(anna);
         }
         
