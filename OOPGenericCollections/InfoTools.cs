@@ -6,7 +6,7 @@ namespace OOPGenericCollections
 {
     internal class InfoTools
     {
-        //Creation of my stack.
+        //Creation of a stack for employee objects.
         public Stack<Employee> staffStack = new Stack<Employee>();
         //Pushes objects onto the staffStack
         public void Pusher(Employee anna, Employee fredrik, Employee essa, Employee antonio, Employee lillemor)
@@ -19,7 +19,7 @@ namespace OOPGenericCollections
             staffStack.Push(antonio);
             staffStack.Push(lillemor);
         }
-
+        //Prints out the profile information of each employee.
         public void ProfilePrinter()
         {
             //Foreach loop that prints out values of properties of the objects in the Stack.
@@ -33,17 +33,22 @@ namespace OOPGenericCollections
                 Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
             }
         }
-
+        //Pops all elements of the stack.
         public void Popper()
         {
-            foreach( var p in staffStack)
+            foreach( var e in staffStack)
             {
                 Console.WriteLine(staffStack.Pop().ID);
-                
+                Console.Write(" " + e.Name + e.Gender + " " + e.Salary);
 
                 Console.WriteLine(staffStack.Count());
             }
             
+        }
+        //Peeks at objects inside of the stack.
+        public void Peeker()
+        {
+
         }
     }
 }
