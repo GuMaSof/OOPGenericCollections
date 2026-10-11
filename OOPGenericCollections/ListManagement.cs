@@ -12,8 +12,7 @@ namespace OOPGenericCollections
 
         public void FindEmployee2()
         {
-            Employee firstMale;
-            if (staffList.Contains(firstMale))
+            if (staffList.Contains(staffList[1]))
             {
                 Console.WriteLine("Employee2 object exists in the list");
             }
@@ -21,14 +20,14 @@ namespace OOPGenericCollections
 
         public void FindFirstMale()
         {
-            Employee employee;
-            Console.WriteLine(staffList.Find(employee => employee.Gender == "Man").Name);
+            Employee firstMale;
+            Console.WriteLine(staffList.Find(firstMale => firstMale.Gender == "Man").Name);
         }
 
         public void FindAllMales()
         {
-            Employee employee;
-            staffList.FindAll()
+            Employee male;
+            staffList.FindAll();
             
         }
     }
