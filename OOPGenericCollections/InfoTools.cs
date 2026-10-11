@@ -19,5 +19,19 @@ namespace OOPGenericCollections
             staffStack.Push(antonio);
             staffStack.Push(lillemor);
         }
+
+        public void ProfilePrinter()
+        {
+            //Foreach loop that prints out values of properties of the objects in the Stack.
+            foreach (Employee j in staffStack)
+            {
+                string jProfile = j.ID + " " + j.Name + " " + j.Gender + " " + j.Salary;
+                int numberOfObjects = staffStack.Count();
+                Console.Write(jProfile);
+                //Is supposed to count the objects in the stack but doesn't actually do it.
+                Console.WriteLine(numberOfObjects + " objects are left in the stack.");
+                Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
+            }
+        }
     }
 }
