@@ -26,10 +26,10 @@ namespace OOPGenericCollections
             foreach (Employee j in staffStack)
             {
                 string jProfile = j.ID + " " + j.Name + " " + j.Gender + " " + j.Salary;
-                int numberOfObjects = staffStack.Count();
+                
                 Console.Write(jProfile);
                 //Is supposed to count the objects in the stack but doesn't actually do it.
-                Console.WriteLine(numberOfObjects + " objects are left in the stack.");
+                Console.WriteLine(staffStack.Count + " objects are left in the stack.");
                 Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
             }
         }
@@ -49,7 +49,6 @@ namespace OOPGenericCollections
             {
 
                 Console.WriteLine(staffStack.Peek().ID);
-                Console.Write(" " + e.Name + e.Gender + " " + e.Salary);
 
                 Console.WriteLine(staffStack.Count());
             }
