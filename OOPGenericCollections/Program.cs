@@ -48,13 +48,7 @@
             };
             InfoTools infoTools = new InfoTools();
 
-            //Pushing the employee objects onto the stack.
-            infoTools.staffStack.Push(anna);
-            infoTools.staffStack.Push(fredrik);
-
-            infoTools.staffStack.Push(essa);
-            infoTools.staffStack.Push(antonio);
-            infoTools.staffStack.Push(lillemor);
+            
 
             //Foreach loop that prints out values of properties of the objects in the Stack.
             foreach (Employee j in staffStack)
