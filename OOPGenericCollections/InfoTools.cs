@@ -36,14 +36,14 @@ namespace OOPGenericCollections
 
         public void Popper()
         {
-            //Popping the entire stack with the pop method.
-            for (int i = 0; i < 5; i++)
+            foreach( var p in staffStack)
             {
-
-                staffStack.Pop();
+                Console.WriteLine(staffStack.Pop().ID);
+                
 
                 Console.WriteLine(staffStack.Count());
             }
+            
         }
     }
 }
