@@ -49,9 +49,12 @@
             //Creation of object for the InfoTools class, so that we may have access to the methods of the class.
             InfoTools infoTools = new InfoTools();
 
+            //Pushing each created object onto the stack for the first time.
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
+            //Printing out the properties of each object.
             infoTools.ProfilePrinter();
+
             //Popping each element of the stack.
             infoTools.Popper(lillemor);
             infoTools.Popper(antonio);
@@ -60,8 +63,10 @@
             infoTools.Popper(fredrik);
 
             infoTools.Popper(anna);
-            infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
+            //Pushing back the objects on the stack again, after having been removed by the Popper method above.
+            infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
+            //Peeking at the properties of the objects. 
             infoTools.Peeker(lillemor);
             infoTools.Peeker(antonio);
 
