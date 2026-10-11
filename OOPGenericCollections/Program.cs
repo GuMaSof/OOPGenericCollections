@@ -48,7 +48,7 @@
             };
             InfoTools infoTools = new InfoTools();
 
-            
+            infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
             //Foreach loop that prints out values of properties of the objects in the Stack.
             foreach (Employee j in staffStack)
