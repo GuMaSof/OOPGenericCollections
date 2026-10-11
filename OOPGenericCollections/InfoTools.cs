@@ -36,19 +36,23 @@ namespace OOPGenericCollections
         //Pops all elements of the stack.
         public void Popper()
         {
-            foreach( var e in staffStack)
+            Console.WriteLine(staffStack.Pop().ID);
+
+            Console.WriteLine(staffStack.Count());
+            
+        }
+        //Peeks at objects inside of the stack.
+        public void Peeker(Employee e)
+        {
+            //Loop that peeks at two objects.
+            for (int i = 0; i < 2; i++)
             {
-                Console.WriteLine(staffStack.Pop().ID);
+
+                Console.WriteLine(staffStack.Peek().ID);
                 Console.Write(" " + e.Name + e.Gender + " " + e.Salary);
 
                 Console.WriteLine(staffStack.Count());
             }
-            
-        }
-        //Peeks at objects inside of the stack.
-        public void Peeker()
-        {
-
         }
     }
 }
