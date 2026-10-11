@@ -32,9 +32,12 @@ namespace OOPGenericCollections
                 string jProfile = j.ID + " " + j.Name + " " + j.Gender + " " + j.Salary;
                 
                 Console.WriteLine(jProfile);
+
                 //Is supposed to count the objects in the stack but doesn't actually do it.
                 Console.WriteLine(staffStack.Count + " objects are left in the stack.");
-                Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
+
+                //Creates some space in between the employee profiles.
+                Console.WriteLine("_____________________________");
             }
         }
         //Pops one element of the stack.
@@ -49,8 +52,11 @@ namespace OOPGenericCollections
             Console.WriteLine(T.Salary);
 
             //Counts the elements of the stack.
-            Console.WriteLine(staffStack.Count());
-            
+            Console.WriteLine(staffStack.Count() + " objects are left in the stack.");
+
+            //Creates some space in between the employee profiles.
+            Console.WriteLine("_____________________________");
+
         }
         //Peeks at objects inside of the stack.
         public void Peeker(Employee T)
@@ -61,7 +67,10 @@ namespace OOPGenericCollections
             Console.WriteLine(T.Gender);
             Console.WriteLine(T.Salary);
 
-            Console.WriteLine(staffStack.Count() );
+            Console.WriteLine(staffStack.Count() + " objects are left in the stack.");
+
+            //Creates some space in between the employee profiles.
+            Console.WriteLine("_____________________________");
         }
     }
 }
