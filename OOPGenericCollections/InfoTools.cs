@@ -4,11 +4,15 @@ using System.Text;
 
 namespace OOPGenericCollections
 {
+    /*The purpose of this class is to keep a few of the codeblocks out of the way, so that reading the code of the Program class becomes a more smooth experience.
+     After all, some of these codeblocks must be used several times.*/
     internal class InfoTools
     {
         //Creation of a stack for employee objects.
         public Stack<Employee> staffStack = new Stack<Employee>();
-        //Pushes objects onto the staffStack
+
+        /*Pushes objects onto the staffStack.
+        This has to be done several times, so it is better to put this codeblock here, and turn into a method for the sake of comfort.*/
         public void Pusher(Employee anna, Employee fredrik, Employee essa, Employee antonio, Employee lillemor)
         {
             //Pushing the employee objects onto the stack.
@@ -51,14 +55,9 @@ namespace OOPGenericCollections
         //Peeks at objects inside of the stack.
         public void Peeker(Employee T)
         {
-            //Loop that peeks at two objects.
-            for (int i = 0; i < 2; i++)
-            {
+            Console.WriteLine(staffStack.Peek().ID);
 
-                Console.WriteLine(staffStack.Peek().ID);
-
-                Console.WriteLine(staffStack.Count());
-            }
+            Console.WriteLine(staffStack.Count());
         }
     }
 }

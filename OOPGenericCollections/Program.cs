@@ -46,6 +46,7 @@
                 Gender = "Kvinna",
                 Salary = 35000
             };
+            //Creation of object for the InfoTools class, so that we may have access to the methods of the class.
             InfoTools infoTools = new InfoTools();
 
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
@@ -53,6 +54,11 @@
             infoTools.ProfilePrinter();
 
             infoTools.Popper(anna);
+            infoTools.Popper(fredrik);
+
+            infoTools.Popper(essa);
+            infoTools.Popper(antonio);
+            infoTools.Popper(lillemor);
 
             //infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 

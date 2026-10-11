@@ -6,8 +6,6 @@ namespace OOPGenericCollections
 {
     internal class Employee
     {
-        
-        
         //Properties for the objects.
         private string id = null;
 
