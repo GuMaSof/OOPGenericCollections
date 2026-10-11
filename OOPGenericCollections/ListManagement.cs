@@ -23,5 +23,9 @@ namespace OOPGenericCollections
             Console.WriteLine(staffList.Find(employee => employee.Gender == "Man").Name);
         }
 
+        public void FindAllMales(Employee employee)
+        {
+            Console.WriteLine(staffList.FindAll(employee => employee.Gender == "Man"));
+        }
     }
 }
