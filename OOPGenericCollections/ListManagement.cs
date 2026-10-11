@@ -10,22 +10,26 @@ namespace OOPGenericCollections
         //Creation of an employee list so that we may use it later.
         public List<Employee> staffList = new List<Employee>();
 
-        public void FindEmployee2(Employee fredrik)
+        public void FindEmployee2()
         {
-            if (staffList.Contains(fredrik))
+            Employee firstMale;
+            if (staffList.Contains(firstMale))
             {
                 Console.WriteLine("Employee2 object exists in the list");
             }
         }
 
-        public void FindFirstMale(Employee employee)
+        public void FindFirstMale()
         {
+            Employee employee;
             Console.WriteLine(staffList.Find(employee => employee.Gender == "Man").Name);
         }
 
-        public void FindAllMales(Employee employee)
+        public void FindAllMales()
         {
-            Console.WriteLine(staffList.FindAll(employee => employee.Gender == "Man"));
+            Employee employee;
+            staffList.FindAll()
+            
         }
     }
 }

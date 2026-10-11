@@ -105,9 +105,14 @@
             listManagement.staffList.Add(antonio);
 
             listManagement.staffList.Add(lillemor);
+
             //Using the method for finding the second employee in the list.
-            listManagement.FindEmployee2(fredrik);
-            listManagement.FindFirstMale(fredrik);
+            listManagement.FindEmployee2();
+
+            //Using a method for finding the first male.
+            listManagement.FindFirstMale();
+
+            listManagement.FindAllMales();
         }
         
     }
