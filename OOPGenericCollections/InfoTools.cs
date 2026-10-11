@@ -36,7 +36,8 @@ namespace OOPGenericCollections
         //Pops all elements of the stack.
         public void Popper()
         {
-            Console.WriteLine(staffStack.Pop().ID);
+            string popProfile = staffStack.Pop().ID + " " + staffStack.Pop().Name + " " + staffStack.Pop().Gender + " " + staffStack.Pop().Salary;
+            Console.WriteLine(popProfile);
 
             Console.WriteLine(staffStack.Count());
             
