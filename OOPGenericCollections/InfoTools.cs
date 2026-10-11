@@ -33,5 +33,17 @@ namespace OOPGenericCollections
                 Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
             }
         }
+
+        public void Popper()
+        {
+            //Popping the entire stack with the pop method.
+            for (int i = 0; i < 5; i++)
+            {
+
+                staffStack.Pop();
+
+                Console.WriteLine(staffStack.Count());
+            }
+        }
     }
 }
