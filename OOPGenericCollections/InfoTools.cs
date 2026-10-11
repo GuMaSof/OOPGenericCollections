@@ -45,11 +45,8 @@ namespace OOPGenericCollections
         {
             staffStack.Pop();
 
-            Console.WriteLine(T.ID);
-            Console.WriteLine(T.Name);
-
-            Console.WriteLine(T.Gender);
-            Console.WriteLine(T.Salary);
+            string tProfile = T.ID + " " + T.Name + " " + T.Gender + " " + T.Salary;
+            Console.WriteLine(tProfile);
 
             //Counts the elements of the stack.
             Console.WriteLine(staffStack.Count() + " objects are left in the stack.");
