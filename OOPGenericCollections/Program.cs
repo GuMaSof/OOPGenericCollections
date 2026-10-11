@@ -52,11 +52,11 @@
 
             infoTools.ProfilePrinter();
 
-            infoTools.Popper();
+            infoTools.Popper(anna);
 
-            infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
+            //infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
-            infoTools.Peeker(anna);
+            //infoTools.Peeker(anna);
         }
         
     }

@@ -33,17 +33,23 @@ namespace OOPGenericCollections
                 Console.WriteLine("_____________________________"); //Creates some space in between the employee profiles.
             }
         }
-        //Pops all elements of the stack.
-        public void Popper()
+        //Pops one element of the stack.
+        public void Popper(Employee T)
         {
-            string popProfile = staffStack.Pop().ID + " " + staffStack.Pop().Name + " " + staffStack.Pop().Gender + " " + staffStack.Pop().Salary;
-            Console.WriteLine(popProfile);
+            staffStack.Pop();
 
+            Console.WriteLine(T.ID);
+            Console.WriteLine(T.Name);
+
+            Console.WriteLine(T.Gender);
+            Console.WriteLine(T.Salary);
+
+            //Counts the elements of the stack.
             Console.WriteLine(staffStack.Count());
             
         }
         //Peeks at objects inside of the stack.
-        public void Peeker(Employee e)
+        public void Peeker(Employee T)
         {
             //Loop that peeks at two objects.
             for (int i = 0; i < 2; i++)
