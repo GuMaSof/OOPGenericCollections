@@ -50,16 +50,9 @@
 
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
-            
 
-            
 
-            staffStack.Push(anna);
-            staffStack.Push(fredrik);
-
-            staffStack.Push(essa);
-            staffStack.Push(antonio);
-            staffStack.Push(lillemor);
+            infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
             //Loop that peeks at two objects.
             for (int i = 0; i < 2; i++)
@@ -70,16 +63,6 @@
                 Console.WriteLine(staffStack.Count());
             }
         }
-        static void Popper(T variable)
-        {
-            //Popping the entire stack with the pop method.
-            for (int i = 0; i < 5; i++)
-            {
-
-                infoTools.staffStack.Pop();
-
-                Console.WriteLine(staffStack.Count());
-            }
-        }
+        
     }
 }
