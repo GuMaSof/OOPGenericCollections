@@ -18,5 +18,10 @@ namespace OOPGenericCollections
             }
         }
 
+        public void FindFirstMale(Employee employee)
+        {
+            Console.WriteLine(staffList.Find(employee => employee.Gender == "Man").Name);
+        }
+
     }
 }
