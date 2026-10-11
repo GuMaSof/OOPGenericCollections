@@ -52,7 +52,7 @@
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
             infoTools.ProfilePrinter();
-
+            //Popping each element of the stack.
             infoTools.Popper(lillemor);
             infoTools.Popper(antonio);
 
@@ -60,9 +60,9 @@
             infoTools.Popper(fredrik);
 
             infoTools.Popper(anna);
-            //infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
+            infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
-            //infoTools.Peeker(anna);
+            infoTools.Peeker(anna);
         }
         
     }

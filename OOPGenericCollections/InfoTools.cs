@@ -55,9 +55,13 @@ namespace OOPGenericCollections
         //Peeks at objects inside of the stack.
         public void Peeker(Employee T)
         {
-            Console.WriteLine(staffStack.Peek().ID);
+            Console.WriteLine(T.ID);
+            Console.WriteLine(T.Name);
 
-            Console.WriteLine(staffStack.Count());
+            Console.WriteLine(T.Gender);
+            Console.WriteLine(T.Salary);
+
+            Console.WriteLine(staffStack.Count() );
         }
     }
 }
