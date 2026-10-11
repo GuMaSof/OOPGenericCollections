@@ -9,7 +9,7 @@ namespace OOPGenericCollections
     {
         //Creation of an employee list so that we may use it later.
         public List<Employee> staffList = new List<Employee>();
-
+        public List<Employee> males = new List<Employee>();
         public void FindEmployee2()
         {
             if (staffList.Contains(staffList[1]))
@@ -27,8 +27,12 @@ namespace OOPGenericCollections
         public void FindAllMales()
         {
             Employee male;
-            staffList.FindAll();
+            males = staffList.FindAll(male => male.Gender == "Man");
             
+            foreach (Employee employee in males)
+            {
+                Console.WriteLine(employee.ID + " " + employee.Name);
+            }
         }
     }
 }

@@ -11,7 +11,7 @@
             {
                 ID = "E593",
                 Name = "Anna",
-                Gender = "Kvinna",
+                Gender = "Woman",
                 Salary = 50000000
             };
             //Employee 2.
@@ -43,7 +43,7 @@
             {
                 ID = "E232",
                 Name = "Lillemor",
-                Gender = "Kvinna",
+                Gender = "Woman",
                 Salary = 35000
             };
             //Creation of object for the InfoTools class, so that we may have access to the methods of the class.
@@ -113,6 +113,7 @@
             listManagement.FindFirstMale();
 
             listManagement.FindAllMales();
+
         }
         
     }
