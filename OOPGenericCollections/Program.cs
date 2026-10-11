@@ -50,6 +50,8 @@
 
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
 
+            infoTools.ProfilePrinter();
+
             infoTools.Popper();
 
             infoTools.Pusher(anna, fredrik, essa, antonio, lillemor);
