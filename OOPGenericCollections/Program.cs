@@ -46,22 +46,21 @@
                 Gender = "Kvinna",
                 Salary = 35000
             };
-            //Creation of my stack.
-            Stack<Employee> staffStack = new Stack<Employee>();
+            InfoTools infoTools = new InfoTools();
 
             //Pushing the employee objects onto the stack.
-            staffStack.Push(anna);
-            staffStack.Push(fredrik);
+            infoTools.staffStack.Push(anna);
+            infoTools.staffStack.Push(fredrik);
 
-            staffStack.Push(essa);
-            staffStack.Push(antonio);
-            staffStack.Push(lillemor);
+            infoTools.staffStack.Push(essa);
+            infoTools.staffStack.Push(antonio);
+            infoTools.staffStack.Push(lillemor);
 
             //Foreach loop that prints out values of properties of the objects in the Stack.
             foreach (Employee j in staffStack)
             {
                 string jProfile = j.ID + " " + j.Name + " " + j.Gender + " " + j.Salary;
-                int numberOfObjects = staffStack.Count();
+                int numberOfObjects = infoTools.staffStack.Count();
                 Console.Write(jProfile);
                 //Is supposed to count the objects in the stack but doesn't actually do it.
                 Console.WriteLine(numberOfObjects + " objects are left in the stack.");
@@ -69,14 +68,7 @@
                 
             }
 
-            //Popping the entire stack with the pop method.
-            for (int i = 0; i < 5; i++)
-            {
-                
-                staffStack.Pop();
-                
-                Console.WriteLine(staffStack.Count());
-            }
+            
 
             staffStack.Push(anna);
             staffStack.Push(fredrik);
@@ -90,6 +82,17 @@
             {
 
                 staffStack.Peek();
+
+                Console.WriteLine(staffStack.Count());
+            }
+        }
+        static void Popper(T variable)
+        {
+            //Popping the entire stack with the pop method.
+            for (int i = 0; i < 5; i++)
+            {
+
+                infoTools.staffStack.Pop();
 
                 Console.WriteLine(staffStack.Count());
             }
