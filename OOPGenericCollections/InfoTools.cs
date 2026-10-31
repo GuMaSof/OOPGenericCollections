@@ -43,10 +43,7 @@ namespace OOPGenericCollections
         //Pops one element of the stack.
         public void Popper(Employee T)
         {
-            staffStack.Pop();
-
-            string tProfile = T.ID + " " + T.Name + " " + T.Gender + " " + T.Salary;
-            Console.WriteLine(tProfile);
+            Console.WriteLine(staffStack.Pop().ID);
 
             //Counts the elements of the stack.
             Console.WriteLine(staffStack.Count() + " objects are left in the stack.");
@@ -58,10 +55,10 @@ namespace OOPGenericCollections
         //Peeks at objects inside of the stack.
         public void Peeker(Employee T)
         {
-            staffStack.Peek();
-            string tProfile = T.ID + " " + T.Name + " " + T.Gender + " " + T.Salary;
-            Console.WriteLine(tProfile);
-
+            
+            Console.WriteLine(staffStack.Peek().ID);
+            Console.WriteLine(staffStack.Peek().Name);
+            Console.WriteLine(staffStack.Peek().Salary);
             Console.WriteLine(staffStack.Count() + " objects are left in the stack.");
 
             //Creates some space in between the employee profiles.
