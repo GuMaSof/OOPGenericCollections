@@ -80,16 +80,16 @@
                 loopCounter = loopCounter + 1;
                 if (loopCounter == 3)
                 {
-                    if (e.ID != null && e.Name != null && e.Gender != null && e.Salary != 0)
+                    if (e == essa)
                     {
-                        string eProfile = e.ID + " " + e.Name + " " + e.Gender + " " + e.Salary;
+                        string essaProfile = e.ID + " " + e.Name + " " + e.Gender + " " + e.Salary;
 
-                        Console.WriteLine(eProfile);
+                        Console.WriteLine(essaProfile);
                         Console.WriteLine("______________________________________");
                     }
                     else
                     {
-                        Console.WriteLine("There is no third element.");
+                        Console.WriteLine("The third element is not present.");
                     }
                 }
             }

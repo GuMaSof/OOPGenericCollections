@@ -16,6 +16,10 @@ namespace OOPGenericCollections
             {
                 Console.WriteLine("Employee2 object exists in the list");
             }
+            else
+            {
+                Console.WriteLine("Employee2 object does not exist in the list.");
+            }
         }
 
         public void FindFirstMale()
